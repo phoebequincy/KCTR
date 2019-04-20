@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../stylesheets/App.css';
 import { Route } from 'react-router-dom'
 import NavBar from './components/NavBar';
 import Home from './components/Home';
@@ -28,7 +27,7 @@ class App extends Component {
               <Route path="/Ropes"
                 component={() =>
                   <Ropes
-                  ropesinst={this.state.ropesinst}
+                  ropeinst={this.state.ropeinst}
                   />}
               />
 
@@ -39,12 +38,6 @@ class App extends Component {
                   />}
               />
 
-              <Route path="/Home"
-                component={()=>
-                  <Home
-
-                  />}
-              />
           </div>
         </div>
     )
